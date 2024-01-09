@@ -7,11 +7,11 @@ class Solution
 {
 public:
     long long maxSubarraySum(int arr[], int n)
-    {
+    { // Calculte the Maximum Value
         long long maximum = INT_MIN;
+        // Calculate maximum in each iteration
         long long sum = 0;
-        int i = 0;
-        for (int j = i; j < n; j++)
+        for (int i = 0; i < n; i++)
         {
             sum += arr[j];
             maximum = max(sum, maximum);
